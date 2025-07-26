@@ -6,9 +6,9 @@ const Home = () => {
   return (
     <main className="max-w-6xl mx-auto flex flex-col gap-16">
 
-
+<div className="py-10">
       {/** first section is profile picture, name, few words who I am */}
-      <section className="flex flex-col sm:flex-row items-center sm:items-start gap-4 py-20">
+      <section className="flex flex-col sm:flex-row items-center sm:items-start gap-4 py-10">
         {/** div for photo */}
         <div>
           <Image
@@ -28,7 +28,7 @@ const Home = () => {
 
 
       {/** second section is about me section*/}
-      <section>
+      <section className="py-8">
         <div>
           <h2 className="text-2xl font-semibold text-blue-900 py-0">About Me</h2>
           <p className="text-xl text-gray-600 py-5">testing</p>
@@ -41,36 +41,67 @@ const Home = () => {
         <div>
           <h2 className="text-2xl font-semibold text-blue-900">Technical Expertise</h2>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 py-5">
-          <div className="rounded border border-gray-200">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-4 py-5">
+          <div className="rounded border border-gray-200 p-4">
             <h3 className="font-semibold mb-2 text-purple-500 text-xl py-2 px-4">Programming</h3>
-            <ul className="px-4 text-gray-600">
+            <ul className="px-4 text-gray-600 space-y-1">
               <li>Java</li>
               <li>C#</li>
               <li>Typescript</li>
               <li>Python</li>
+              <li>Powershell</li>
             </ul>
           </div>
-          <div className="rounded border border-gray-200">
-            <h3 className="font-semibold mb-2 text-purple-500 text-xl py-2 px-4">Deployment</h3>
-            <ul className="px-4 text-gray-600">
+          <div className="rounded border border-gray-200 p-4">
+            <h3 className="font-semibold mb-2 text-purple-500 text-xl py-2 px-4">Testing & Deployment</h3>
+            <ul className="px-4 text-gray-600 space-y-1">
               <li>CI/CD</li>
-              <li>Git</li>
+              <li>Unit Testing</li>
+              <li>Power Automate</li>
               <li>GitLab</li>
+              <li>XUnit</li>
+              <li>Static Analysis</li>
             </ul>
           </div>
-          <div className="rounded border border-gray-200">
+          <div className="rounded border border-gray-200 p-4">
             <h3 className="font-semibold mb-2 text-purple-500 text-xl py-2 px-4">Web Development</h3>
+              <ul className="px-4 text-gray-600 space-y-1">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node.js</li>
+            </ul>
+          </div>
+          <div className="rounded border border-gray-200 p-4">
+            <h3 className="font-semibold mb-2 text-purple-500 text-xl py-2 px-4">Tools</h3>
+              <ul className="px-4 text-gray-600 space-y-1">
+                <li>Git</li>
+                <li>Visual Studio</li>
+                <li>Jira</li>
+                <li>Confluence</li>
+                <li></li>
+            </ul>
           </div>
         </div>
       </section>
       {/** fourth section is featured projects*/}
-      <section></section>
+      <section>
+        <div>
+          <h2 className="text-2xl font-semibold text-blue-900 py-0">Featured Projects</h2>
+                  <div className="grid grid-cols-2 md:grid-cols-2 gap-4 py-5">
+                              <div className="rounded border border-gray-200 p-4">
+
+                              </div>
+                                        <div className="rounded border border-gray-200 p-4"></div>
+                  </div>
+        </div>
+      </section>
       {/** fifth section is experience(?)*/}
       <section></section>
       {/** sixth section is education*/}
       <section></section>
+      </div>
     </main >
+    
   )
 }
 

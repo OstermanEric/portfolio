@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 
 
@@ -31,7 +32,7 @@ const Home = () => {
         <section className="py-8">
           <div>
             <h2 className="text-2xl font-semibold text-blue-900 py-0">About Me</h2>
-            <p className="text-xl text-gray-600 py-5">I am a software engineer with primary experience in unit testing, CI/CD pipelines and web design. I graduated from Lehigh University in 2024 with a degree in Computer Science and Cognitive Science. I have passions in building applications, mainly web/mobile ones. Aside from tech, I enjoy reading, playing/watching basketball and football</p>
+            <p className="text-xl text-gray-600 py-5">I am a software engineer with primary experience in unit testing, CI/CD pipelines and web design. I graduated from Lehigh University in 2024 with a degree in Computer Science and Cognitive Science. I have passions in building applications, mainly web/mobile ones.</p>
           </div>
         </section>
 
@@ -108,7 +109,31 @@ const Home = () => {
 
                   {/* Bottom half content */}
                   <div className="h-1/2 flex flex-col justify-start px-4 py-2 space-y-2">
-                    <h2 className="text-lg font-semibold text-purple-500">Image Segmentation Report</h2>
+                    <div className="flex justify-between py-2">
+                      <a href="https://github.com/OstermanEric/Image_Segmentation"><h2 className="text-lg font-semibold text-purple-500 hover:underline">Image Segmentation Report</h2></a>
+                      <a
+                        href="https://github.com/OstermanEric/Image_Segmentation"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-500 hover:text-blue-600 inline-flex items-center space-x-1"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M15 3h6v6" />
+                          <path d="M10 14L21 3" />
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        </svg>
+                      </a>
+
+                    </div>
                     <p className="text-sm text-gray-600">
                       Report investigating the efficacy between the K-Means clustering and Segment Anything Model (SAM) in segmenting the lungs from the CT-CASE 15 dataset.
                     </p>
@@ -137,7 +162,7 @@ const Home = () => {
 
               <div className="rounded border border-gray-200 p-4">
                 {/* Placeholder for second project */}
-                                <div className="flex flex-col h-80 relative">
+                <div className="flex flex-col h-80 relative">
 
                   {/* Top half image */}
                   <div className="relative h-1/2 w-full">
@@ -152,7 +177,31 @@ const Home = () => {
 
                   {/* Bottom half content */}
                   <div className="h-1/2 flex flex-col justify-start px-4 py-2 space-y-2">
-                    <h2 className="text-lg font-semibold text-purple-500">Peaceful Warrior Chess Foundation</h2>
+                    <div className="flex justify-between py-2">
+                      <a href="https://thepwcf.org"><h2 className="text-lg font-semibold text-purple-500 hover:underline">Peaceful Warrior Chess Foundation</h2></a>
+                      <a
+                        href="https://thepwcf.org"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-500 hover:text-blue-600 inline-flex items-center space-x-1"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M15 3h6v6" />
+                          <path d="M10 14L21 3" />
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        </svg>
+                      </a>
+
+                    </div>
                     <p className="text-sm text-gray-600">
                       Developed website for The Peaceful Warrior Chess Foundation. Allows donations, has contact form, and conveys information regarding foundation.
                     </p>
@@ -182,7 +231,65 @@ const Home = () => {
         {/** fifth section is experience(?)*/}
         <section></section>
         {/** sixth section is education*/}
-        <section></section>
+        <section>
+          <h2 className="text-2xl font-semibold text-blue-900 py-8">Education</h2>
+          <div className="space-y-6">
+            <div className="rounded-xl border bg-card text-card-foreground">
+              <div className="flex flex-col space-y-1.5 p-6">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h3 className="font-semibold text-purple-500 text-lg">B.A. in Computer Science and Cognitive Science</h3>
+                    <p className="text-md text-gray-600">Lehigh University</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-md text-gray-600">2019-2024</p>
+                    <p className="text-md text-gray-600">Bethlehem, PA</p>
+                  </div>
+                </div>
+                <div className="p-6 px-0">
+                  <p className="text-md text-gray-600">Double major in Computer Science and Cognitive Science.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+<section>
+  <h2 className="text-2xl font-semibold text-blue-900 py-8">Get in Touch</h2>
+  <div className="flex flex-wrap gap-4">
+
+    <a
+      href="mailto:ejosterman@gmail.com"
+      className="text-purple-500 hover:text-purple-500 transition px-4 hover:scale-110"
+      aria-label="Email"
+    >
+      <Mail className="w-6 h-6" />
+    </a>
+
+    <a
+      href="https://github.com/OstermanEric"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-purple-500 hover:text-purple-500 transition px-4 hover:scale-110"
+      aria-label="GitHub"
+    >
+      <Github className="w-6 h-6" />
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/ejosterman/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-purple-500 hover:text-purple-500 transition px-4 hover:scale-110"
+      aria-label="LinkedIn"
+    >
+      <Linkedin className="w-6 h-6" />
+    </a>
+
+  </div>
+</section>
+
       </div>
     </main >
 
